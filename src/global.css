@@ -1,0 +1,140 @@
+/* imports */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto:wght@400;700&display=swap');
+
+/* general Styles */
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-size: 62.5%;
+    /* equivalente a 10px */
+    font-family: 'Roboto', sans-serif;
+}
+
+#root {
+    background-color: var(--background);
+}
+
+a {
+    cursor: pointer;
+}
+
+h1,
+h2,
+h3,
+p {
+    font-size: 2rem;
+}
+
+
+:root {
+    --white: #FFFFFF;
+    --purple: #2E0152;
+    --red: #e52e4d;
+    /* --green: #00FD22; */
+    --green: #8CBF00;
+    --light-green: #5CDE0B;
+    --purple-light: #5429cc;
+    --yelow: #FAEA00;
+    --blue-light: #6933ff;
+
+    --text-title: #363f5f;
+    --text-body: #969cb3;
+    --gray: #474954;
+    --background: #f0f2f5;
+
+}
+
+/* App.tsx Styles */
+.main-content {
+    width: 100%;
+    background-color: var(--background);
+}
+.box-text {
+    width: 100%;
+    padding: 1rem 4rem;
+}
+.box-text p + p {
+    margin-top: 1rem;
+}
+
+
+/* create-button */
+.create-button {
+    margin: 2.5rem auto 0 auto;
+    width: 20rem;
+    height: 7rem;
+    padding: 1rem 1.5rem;
+    border-radius: 1.5rem;
+    border: .1rem solid var(--white);
+    background-color: var(--purple);
+    color: var(--white);
+    font-size: 1.5rem;
+    font-weight: 600;
+    font-family: 'Roboto', sans-serif;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: filter .3s;
+}
+.create-button:hover {
+    filter: brightness(1.3);
+}
+
+
+.create-button img {
+    width: 4rem;
+    height: 4rem;
+}
+
+.box-title {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.title {
+    font-size: 3rem;
+    color: var(--purple);
+    text-align: center;
+    margin: 1rem auto;
+}
+
+#left-title {
+    text-align: left;
+}
+
+.separator{
+    width: 75%;
+    font-size: 14px ;
+    color: var(--purple);
+    margin: 32px 0;
+    display: flex;
+    align-items: center;   
+}
+
+.separator::before{
+    content: '';
+    flex: 1;
+    height: 1px;
+    background: var(--purple);
+    margin-right: 16px;
+}
+.separator::after{
+    content: '';
+    flex: 1;
+    height: 1px;
+    background: var(--purple);
+    margin-left: 16px;
+}
+
+/* Topic Cards */
+
+.topicCard-box {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 3.5rem;
+}

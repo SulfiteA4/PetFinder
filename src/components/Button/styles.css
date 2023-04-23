@@ -1,0 +1,28 @@
+.button {
+    border-radius: .8rem;
+    height: 5rem;
+    width: 15rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 1.5rem;
+    line-height: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--green);
+    color: var(--purple);
+    transition: filter .2s;
+    cursor: pointer;
+    filter: brightness();
+
+}    
+
+.button:hover {
+    filter : brightness(1.1);
+
+}
+
+.button > img{
+    margin-right: 1rem;
+    width: 3rem;
+}

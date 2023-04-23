@@ -1,0 +1,21 @@
+.swiper {
+    
+    padding: 3.2rem;
+}
+
+.swiper-slide {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+
+}
+
+
+.swiper-pagination-bullet-active {
+    background-color: var(--purple);
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+    color: var(--purple);
+}
